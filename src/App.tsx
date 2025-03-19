@@ -105,6 +105,7 @@ function App() {
               <div className="bg-gray-50 rounded-lg p-4">
                 <p className="text-gray-700 italic">Примеры анимаций сложных моделей</p>
                 {/* Add your video examples here */}
+                <img src="/0000-0149_1.gif" alt="Пример анимации" className="w-full rounded-lg" />
               </div>
             </div>
 
@@ -129,6 +130,7 @@ function App() {
               <div className="bg-gray-50 rounded-lg p-4">
                 <p className="text-gray-700 italic">Примеры анимаций простых моделей</p>
                 {/* Add your video examples here */}
+                <img src="/1112.gif" alt="Пример анимации" className="w-full rounded-lg" />
               </div>
             </div>
 
