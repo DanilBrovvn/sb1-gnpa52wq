@@ -100,15 +100,25 @@ function App() {
           <h2 className="text-2xl font-semibold text-gray-900 mb-8">Примеры работ и результаты</h2>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-white rounded-2xl shadow-sm p-8">
-              <div className="aspect-square overflow-hidden rounded-lg mb-4">
-                <img src="/0000-0149_1.gif" alt="Пример анимации" className="w-full h-full object-cover" />
+              <div className="aspect-[2/3] overflow-hidden rounded-lg mb-4"> {/* Изменено соотношение */}
+                <img 
+                  src="/0000-0149_1.gif" 
+                  alt="Пример анимации" 
+                  className="w-full h-full object-cover"
+                />
               </div>
               <p className="text-green-600 font-semibold">+27% увеличение просмотров карточки</p>
               <p className="text-gray-600">Категория: Электроника</p>
             </div>
             <div className="bg-white rounded-2xl shadow-sm p-8">
-              <div className="aspect-square overflow-hidden rounded-lg mb-4">
-              <a href='https://postimg.cc/mhWVLmQH' target='_blank'><img src='https://i.postimg.cc/h4fY0wvp/undefined-Imgur-1.gif' border='0' alt='undefined-Imgur-1'/></a>
+              <div className="aspect-[2/3] overflow-hidden rounded-lg mb-4"> {/* Изменено соотношение */}
+                <a href='https://postimg.cc/mhWVLmQH' target='_blank' rel="noopener noreferrer">
+                  <img 
+                    src='https://i.postimg.cc/h4fY0wvp/undefined-Imgur-1.gif' 
+                    alt='undefined-Imgur-1'
+                    className="w-full h-full object-cover"
+                  />
+                </a>
               </div>
               <p className="text-green-600 font-semibold">+25% больше переходов в корзину</p>
               <p className="text-gray-600">Категория: Канцелярия</p>
