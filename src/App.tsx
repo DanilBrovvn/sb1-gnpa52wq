@@ -11,8 +11,8 @@ function App() {
       {/* Hero Section */}
     <header className="bg-white shadow-sm">
   <div className="max-w-5xl mx-auto px-4 py-16 sm:px-6 lg:px-8">
-    <h1 className="text-4xl font-bold text-gray-900 mb-4">Заголовок</h1>
-    <p className="text-xl text-gray-600 mb-8">Описание</p>
+    <h1 className="text-4xl font-bold text-gray-900 mb-4">Профессиональная 3D-анимация для карточек товаров на Ozon</h1>
+    <p className="text-xl text-gray-600 mb-8">3D-анимация помогает покупателям лучше рассмотреть товар. По статистике Ozon, такие карточки получают в среднем на 20-30% больше просмотров.</p>
     
     {/* Контакты - теперь правильно закрыто */}
     <div className="mt-8 inline-block bg-blue-50 px-6 py-4 rounded-xl border-2 border-blue-200">
@@ -101,11 +101,7 @@ function App() {
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-white rounded-2xl shadow-sm p-8">
               <div className="aspect-[2/3] overflow-hidden rounded-lg mb-4"> {/* Изменено соотношение */}
-                <img 
-                  src="/0000-0149_1.gif" 
-                  alt="Пример анимации" 
-                  className="w-full h-full object-cover"
-                />
+               <a href='https://postimg.cc/B8vdJ41N' target='_blank'><img src='https://i.postimg.cc/zfw5SfDm/0000-0149-1-1.gif' border='0' alt='0000-0149-1-1'/></a>
               </div>
               <p className="text-green-600 font-semibold">+27% увеличение просмотров карточки</p>
               <p className="text-gray-600">Категория: Электроника</p>
