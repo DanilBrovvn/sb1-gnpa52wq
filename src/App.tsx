@@ -9,20 +9,20 @@ function App() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <header className="bg-white shadow-sm">
-        <div className="max-w-5xl mx-auto px-4 py-16 sm:px-6 lg:px-8">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">Профессиональная 3D-анимация для карточек товаров на Ozon</h1>
-          <p className="text-xl text-gray-600 mb-8">
-            3D-анимация помогает покупателям лучше рассмотреть товар. По статистике Ozon, такие карточки получают в среднем на 20-30% больше просмотров.
-          </p>
-          
-          {/* Contact Information */}
-          <div className="mt-8 inline-block bg-blue-50 px-6 py-4 rounded-xl border-2 border-blue-200">
-            <a href="tel:+89997827258" className="flex items-center text-blue-700 hover:text-blue-900 text-xl font-semibold">
-              <Phone className="h-6 w-6 mr-3" />
-              <span>+7 (999) 782-72-58</span>
-              </a>
-      </header>
+    <header className="bg-white shadow-sm">
+  <div className="max-w-5xl mx-auto px-4 py-16 sm:px-6 lg:px-8">
+    <h1 className="text-4xl font-bold text-gray-900 mb-4">Заголовок</h1>
+    <p className="text-xl text-gray-600 mb-8">Описание</p>
+    
+    {/* Контакты - теперь правильно закрыто */}
+    <div className="mt-8 inline-block bg-blue-50 px-6 py-4 rounded-xl border-2 border-blue-200">
+      <a href="tel:+89997827258" className="flex items-center text-blue-700 hover:text-blue-900 text-xl font-semibold">
+        <Phone className="h-6 w-6 mr-3" />
+        <span>+7 (999) 782-72-58</span>
+      </a> {/* Закрывающий тег добавлен здесь */}
+    </div>
+  </div>
+</header>
 
       {/* Main Content */}
       <main className="max-w-5xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
