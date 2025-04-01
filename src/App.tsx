@@ -21,6 +21,7 @@ function App() {
             <a href="tel:+89997827258" className="flex items-center text-blue-700 hover:text-blue-900 text-xl font-semibold">
               <Phone className="h-6 w-6 mr-3" />
               <span>+7 (999) 782-72-58</span>
+              </a>
       </header>
 
       {/* Main Content */}
