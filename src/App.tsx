@@ -21,17 +21,6 @@ function App() {
             <a href="tel:+89997827258" className="flex items-center text-blue-700 hover:text-blue-900 text-xl font-semibold">
               <Phone className="h-6 w-6 mr-3" />
               <span>+7 (999) 782-72-58</span>
-            </a>
-          </div>
-
-          {/* CTA Button */}
-          <button 
-            onClick={handleContactClick}
-            className="mt-8 bg-orange-500 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-orange-600 transition-colors"
-          >
-            Получить расчёт за 5 минут
-          </button>
-        </div>
       </header>
 
       {/* Main Content */}
@@ -113,15 +102,15 @@ function App() {
               <div className="aspect-square overflow-hidden rounded-lg mb-4">
                 <img src="/0000-0149_1.gif" alt="Пример анимации" className="w-full h-full object-cover" />
               </div>
-              <p className="text-green-600 font-semibold">+37% увеличение просмотров карточки</p>
+              <p className="text-green-600 font-semibold">+27% увеличение просмотров карточки</p>
               <p className="text-gray-600">Категория: Электроника</p>
             </div>
             <div className="bg-white rounded-2xl shadow-sm p-8">
               <div className="aspect-square overflow-hidden rounded-lg mb-4">
-                <img src="https://i.imgur.com/OMRfvvS.gif" alt="Пример анимации" className="w-full h-full object-cover" />
+               <blockquote class="imgur-embed-pub" lang="en" data-id="a/OMRfvvS" data-context="false" ><a href="//imgur.com/a/OMRfvvS"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
               </div>
-              <p className="text-green-600 font-semibold">+45% больше переходов в корзину</p>
-              <p className="text-gray-600">Категория: Товары для дома</p>
+              <p className="text-green-600 font-semibold">+25% больше переходов в корзину</p>
+              <p className="text-gray-600">Категория: Канцелярия</p>
             </div>
           </div>
         </section>
