@@ -107,7 +107,7 @@ function App() {
             </div>
             <div className="bg-white rounded-2xl shadow-sm p-8">
               <div className="aspect-square overflow-hidden rounded-lg mb-4">
-               <blockquote class="imgur-embed-pub" lang="en" data-id="a/OMRfvvS" data-context="false" ><a href="//imgur.com/a/OMRfvvS"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+              <a href='https://postimg.cc/mhWVLmQH' target='_blank'><img src='https://i.postimg.cc/h4fY0wvp/undefined-Imgur-1.gif' border='0' alt='undefined-Imgur-1'/></a>
               </div>
               <p className="text-green-600 font-semibold">+25% больше переходов в корзину</p>
               <p className="text-gray-600">Категория: Канцелярия</p>
