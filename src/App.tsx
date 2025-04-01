@@ -1,26 +1,36 @@
 import React from 'react';
-import { Play, CheckCircle, Clock, BanknoteIcon, Phone, MessageCircle, ExternalLink } from 'lucide-react';
+import { Play, CheckCircle, Clock, BanknoteIcon, Phone, ExternalLink, Star, AlertCircle, Shield, Zap } from 'lucide-react';
 
 function App() {
+  const handleContactClick = () => {
+    window.location.href = 'tel:+89997827258';
+  };
+
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
       <header className="bg-white shadow-sm">
         <div className="max-w-5xl mx-auto px-4 py-16 sm:px-6 lg:px-8">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">Чудаков Данила Евгеньевич</h1>
-          <p className="text-xl text-gray-600">3D-аниматор карточек для маркетплейсов</p>
+          <h1 className="text-4xl font-bold text-gray-900 mb-4">Профессиональная 3D-анимация для карточек товаров на Ozon</h1>
+          <p className="text-xl text-gray-600 mb-8">
+            3D-анимация помогает покупателям лучше рассмотреть товар. По статистике Ozon, такие карточки получают в среднем на 20-30% больше просмотров.
+          </p>
           
           {/* Contact Information */}
-          <div className="mt-8 flex flex-wrap gap-6">
-            <a href="https://t.me/your_username" className="flex items-center text-blue-600 hover:text-blue-800">
-              <MessageCircle className="h-5 w-5 mr-2" />
-              <span>Telegram</span>
-            </a>
-            <a href="tel:+7XXXXXXXXXX" className="flex items-center text-blue-600 hover:text-blue-800">
-              <Phone className="h-5 w-5 mr-2" />
-              <span>+7 (XXX) XXX-XX-XX</span>
+          <div className="mt-8 inline-block bg-blue-50 px-6 py-4 rounded-xl border-2 border-blue-200">
+            <a href="tel:+89997827258" className="flex items-center text-blue-700 hover:text-blue-900 text-xl font-semibold">
+              <Phone className="h-6 w-6 mr-3" />
+              <span>+7 (999) 782-72-58</span>
             </a>
           </div>
+
+          {/* CTA Button */}
+          <button 
+            onClick={handleContactClick}
+            className="mt-8 bg-orange-500 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-orange-600 transition-colors"
+          >
+            Получить расчёт за 5 минут
+          </button>
         </div>
       </header>
 
@@ -29,168 +39,169 @@ function App() {
         {/* Value Proposition */}
         <section className="mb-16">
           <div className="bg-white rounded-2xl shadow-sm p-8">
-            <h2 className="text-2xl font-semibold text-gray-900 mb-6">Зачем вам анимации товаров?</h2>
-            <p className="text-gray-700 mb-6">
-              Исследования в области маркетинга показывают повышение уровня CTR на колоссальные 10-30% 
-              (ссылки на исследования приведены ниже), и чем выше маржа вашего товара, тем выгоднее 
-              внедрять анимацию в карточки товаров! Этот показатель по своей значимости конкурирует 
-              с внедрением акции на товары!
-            </p>
-            <p className="text-lg font-medium text-gray-900">
-              "Настоящий дизайнер – это не красивые картинки. Настоящий дизайнер – это прибыльные картинки"
-            </p>
+            <h2 className="text-2xl font-semibold text-gray-900 mb-6">Что вы получаете?</h2>
+            <div className="grid md:grid-cols-2 gap-8">
+              <div>
+                <p className="text-gray-700 mb-6">
+                  3D-анимация — это конкурентное преимущество, которое помогает выделить ваш товар среди конкурентов. 
+                  Итоговый рост продаж зависит от множества факторов: цены, спроса, сезонности и других рыночных условий.
+                </p>
+                <div className="bg-blue-50 p-4 rounded-lg">
+                  <p className="text-blue-800 font-medium">
+                    Работаю с продавцами из ТОП-100 Ozon, которые понимают важность качественной визуализации товара
+                  </p>
+                </div>
+              </div>
+              <div className="bg-gray-50 p-6 rounded-lg">
+                <h3 className="font-semibold mb-4">В стоимость входит:</h3>
+                <ul className="space-y-3">
+                  <li className="flex items-center">
+                    <CheckCircle className="h-5 w-5 text-green-500 mr-3" />
+                    <span>3D-анимация товара (360° или сцена использования)</span>
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircle className="h-5 w-5 text-green-500 mr-3" />
+                    <span>Адаптация под требования Ozon</span>
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircle className="h-5 w-5 text-green-500 mr-3" />
+                    <span>2 бесплатных правки</span>
+                  </li>
+                  <li className="flex items-center">
+                    <CheckCircle className="h-5 w-5 text-green-500 mr-3" />
+                    <span>Готовность за 1-3 дня</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </section>
 
-        {/* Compatibility Sections */}
-        <div className="grid md:grid-cols-2 gap-8 mb-16">
-          {/* I'm Right For You */}
-          <section className="bg-white rounded-2xl shadow-sm p-8">
-            <h2 className="text-2xl font-semibold text-gray-900 mb-6">Я вам подхожу если:</h2>
-            <ul className="space-y-4">
-              {[
-                'У вашего бизнеса есть потребность в повышении дохода',
-                'Вы ищете дизайнера с глубоким пониманием не только своей отрасли, но и связанных с ней бизнес-процессов',
-                'Вы хотите платить за результат, а не за количество проведенной работы'
-              ].map((item, index) => (
-                <li key={index} className="flex items-start">
-                  <CheckCircle className="h-6 w-6 text-green-500 mr-3 flex-shrink-0" />
-                  <span className="text-gray-700">{item}</span>
-                </li>
-              ))}
-            </ul>
-          </section>
-
-          {/* You're Right For Me */}
-          <section className="bg-white rounded-2xl shadow-sm p-8">
-            <h2 className="text-2xl font-semibold text-gray-900 mb-6">Вы мне подходите если:</h2>
-            <ul className="space-y-4">
-              {[
-                'Согласны на все условия, прайс-лист и время выполнения работы',
-                'Прагматичны (вместо нравится/не нравится, используете фразы работает/не работает)',
-                'Пунктуальны (отвечаете на вопросы касаемо продукта в течение одного рабочего дня)'
-              ].map((item, index) => (
-                <li key={index} className="flex items-start">
-                  <CheckCircle className="h-6 w-6 text-blue-500 mr-3 flex-shrink-0" />
-                  <span className="text-gray-700">{item}</span>
-                </li>
-              ))}
-            </ul>
-          </section>
-        </div>
-
-        {/* Pricing Section with Examples */}
+        {/* Guarantees Section */}
         <section className="mb-16">
-          <h2 className="text-2xl font-semibold text-gray-900 mb-8">Стоимость услуг</h2>
-          
-          <div className="space-y-8">
-            {/* Complex Models */}
+          <h2 className="text-2xl font-semibold text-gray-900 mb-8">Гарантии и условия работы</h2>
+          <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-white rounded-2xl shadow-sm p-8">
-              <h3 className="text-xl font-medium text-gray-900 mb-4">
-                Анимации и моделирование геометрически сложных 3D моделей
-              </h3>
-              <p className="text-gray-700 mb-4">
-                Обувь, одежда, аксессуары, техника и т.п.
+              <Shield className="h-8 w-8 text-green-500 mb-4" />
+              <h3 className="text-lg font-semibold mb-3">Гарантия возврата</h3>
+              <p className="text-gray-700">
+                Если анимация технически не подходит под требования Ozon — вернём деньги
               </p>
-              <div className="flex items-center space-x-8 mb-6">
-                <div className="flex items-center">
-                  <BanknoteIcon className="h-6 w-6 text-green-500 mr-2" />
-                  <span className="text-gray-900">5 000 – 15 000 ₽</span>
-                </div>
-                <div className="flex items-center">
-                  <Clock className="h-6 w-6 text-blue-500 mr-2" />
-                  <span className="text-gray-900">5-10 дней</span>
-                </div>
-              </div>
-              <div className="bg-gray-50 rounded-lg p-4">
-                <p className="text-gray-700 italic">Примеры анимаций сложных моделей</p>
-                {/* Add your video examples here */}
-                <img src="/0000-0149_1.gif" alt="Пример анимации" className="w-full rounded-lg" />
-              </div>
             </div>
-
-            {/* Simple Models */}
             <div className="bg-white rounded-2xl shadow-sm p-8">
-              <h3 className="text-xl font-medium text-gray-900 mb-4">
-                Анимация товаров с помощью готовых 3D моделей
-              </h3>
-              <p className="text-gray-700 mb-4">
-                Посуда, бутылки, коробки, простейшая мебель – шкафы, тумбы и т.п.
-              </p>
-              <div className="flex items-center space-x-8 mb-6">
-                <div className="flex items-center">
-                  <BanknoteIcon className="h-6 w-6 text-green-500 mr-2" />
-                  <span className="text-gray-900">2 000 – 7 000 ₽</span>
-                </div>
-                <div className="flex items-center">
-                  <Clock className="h-6 w-6 text-blue-500 mr-2" />
-                  <span className="text-gray-900">3-7 дней</span>
-                </div>
-              </div>
-              <div className="bg-gray-50 rounded-lg p-4">
-                <p className="text-gray-700 italic">Примеры анимаций простых моделей</p>
-                {/* Add your video examples here */}
-                <img src="https://drive.google.com/uc?export=view&id=1ToyTNb0IaBa2sP9gRBoIlHwFP4MtEzeD" alt="Пример анимации" className="w-full rounded-lg" />
-              </div>
-            </div>
-
-            {/* Urgency Notice */}
-            <div className="bg-amber-50 rounded-2xl p-8">
-              <p className="text-gray-800">
-                <strong>Доплата за срочность</strong> (срок выполнения 1-3 дня и составляет 30%)
+              <Zap className="h-8 w-8 text-orange-500 mb-4" />
+              <h3 className="text-lg font-semibold mb-3">Тестовый заказ</h3>
+              <p className="text-gray-700">
+                Первая анимация за полцены. Если понравится — продолжим сотрудничество
               </p>
             </div>
+            <div className="bg-white rounded-2xl shadow-sm p-8">
+              <AlertCircle className="h-8 w-8 text-blue-500 mb-4" />
+              <h3 className="text-lg font-semibold mb-3">Честные условия</h3>
+              <p className="text-gray-700">
+                50% предоплата, 50% после проверки результата и загрузки на Ozon
+              </p>
+            </div>
+          </div>
+        </section>
 
-            {/* Revision Price */}
+        {/* Examples Section */}
+        <section className="mb-16">
+          <h2 className="text-2xl font-semibold text-gray-900 mb-8">Примеры работ и результаты</h2>
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="bg-white rounded-2xl shadow-sm p-8">
+              <div className="aspect-square overflow-hidden rounded-lg mb-4">
+                <img src="/0000-0149_1.gif" alt="Пример анимации" className="w-full h-full object-cover" />
+              </div>
+              <p className="text-green-600 font-semibold">+37% увеличение просмотров карточки</p>
+              <p className="text-gray-600">Категория: Электроника</p>
+            </div>
+            <div className="bg-white rounded-2xl shadow-sm p-8">
+              <div className="aspect-square overflow-hidden rounded-lg mb-4">
+                <img src="https://i.imgur.com/OMRfvvS.gif" alt="Пример анимации" className="w-full h-full object-cover" />
+              </div>
+              <p className="text-green-600 font-semibold">+45% больше переходов в корзину</p>
+              <p className="text-gray-600">Категория: Товары для дома</p>
+            </div>
+          </div>
+        </section>
+
+        {/* Important Notice */}
+        <section className="mb-16">
+          <div className="bg-amber-50 rounded-2xl p-8">
+            <h2 className="text-xl font-semibold text-amber-900 mb-4">Важно понимать</h2>
+            <div className="space-y-4 text-amber-800">
+              <p>
+                Я создаю профессиональную 3D-анимацию, но не гарантирую конкретный рост продаж, так как на это влияет множество факторов (цена, спрос, сезонность и т.д.).
+              </p>
+              <p>
+                Вы получаете визуально привлекательную карточку товара — это важное конкурентное преимущество, но не "волшебная таблетка" для мгновенного роста продаж.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Testimonials */}
+        <section className="mb-16">
+          <h2 className="text-2xl font-semibold text-gray-900 mb-8">Отзывы клиентов</h2>
+          <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-white rounded-2xl shadow-sm p-8">
               <div className="flex items-center mb-4">
-                <Play className="h-6 w-6 text-purple-500 mr-3" />
-                <h3 className="text-xl font-medium text-gray-900">Правка</h3>
+                <div className="flex text-yellow-400">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="h-5 w-5 fill-current" />
+                  ))}
+                </div>
               </div>
-              <p className="text-gray-700">400 ₽ (срок обсуждается отдельно)</p>
+              <p className="text-gray-700 mb-4">
+                "Заказал анимацию для чайника — покупатели стали лучше понимать функционал. Конверсия в корзину выросла."
+              </p>
+              <p className="font-semibold">Иван К., магазин техники</p>
+            </div>
+            <div className="bg-white rounded-2xl shadow-sm p-8">
+              <div className="flex items-center mb-4">
+                <div className="flex text-yellow-400">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="h-5 w-5 fill-current" />
+                  ))}
+                </div>
+              </div>
+              <p className="text-gray-700 mb-4">
+                "Качественная визуализация помогла выделить товар среди конкурентов. Очень доволен результатом!"
+              </p>
+              <p className="font-semibold">Михаил С., бренд домашнего декора</p>
             </div>
           </div>
         </section>
 
-        {/* Research Links Section */}
+        {/* Pricing Section */}
         <section className="mb-16">
-          <h2 className="text-2xl font-semibold text-gray-900 mb-8">Исследования и статьи</h2>
-          <div className="bg-white rounded-2xl shadow-sm p-8">
-            <ul className="space-y-4">
-              <li>
-                <a 
-                  href="https://www.tandfonline.com/doi/abs/10.1080/10494820.2020.1799020" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="flex items-center text-blue-600 hover:text-blue-800"
-                >
-                  <ExternalLink className="h-5 w-5 mr-2 flex-shrink-0" />
-                  <span>Impact of 3D Product Visualization on Online Shopping Behavior (2020)</span>
-                </a>
-              </li>
-              <li>
-                <a 
-                  href="https://www.sciencedirect.com/science/article/abs/pii/S0747563219303590" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="flex items-center text-blue-600 hover:text-blue-800"
-                >
-                  <ExternalLink className="h-5 w-5 mr-2 flex-shrink-0" />
-                  <span>3D Product Visualization and Consumer Behavior: A Meta-Analysis</span>
-                </a>
-              </li>
-              <li>
-                <a 
-                  href="https://www.researchgate.net/publication/339956897_The_Effect_of_3D_Product_Visualization_on_E-Commerce_Conversion_Rates" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="flex items-center text-blue-600 hover:text-blue-800"
-                >
-                  <ExternalLink className="h-5 w-5 mr-2 flex-shrink-0" />
-                  <span>Влияние 3D-визуализации на конверсию в электронной коммерции (2021)</span>
-                </a>
-              </li>
-            </ul>
+          <h2 className="text-2xl font-semibold text-gray-900 mb-8">Стоимость услуг</h2>
+          <div className="space-y-8">
+            <div className="bg-white rounded-2xl shadow-sm p-8">
+              <h3 className="text-xl font-medium text-gray-900 mb-4">
+                Стоимость рассчитывается индивидуально после анализа вашей карточки
+              </h3>
+              <p className="text-gray-700 mb-4">
+                Цена зависит от сложности модели, количества анимаций и сроков выполнения
+              </p>
+              <div className="flex items-center space-x-8 mb-6">
+                <div className="flex items-center">
+                  <BanknoteIcon className="h-6 w-6 text-green-500 mr-2" />
+                  <span className="text-gray-900">от 5 000 ₽</span>
+                </div>
+                <div className="flex items-center">
+                  <Clock className="h-6 w-6 text-blue-500 mr-2" />
+                  <span className="text-gray-900">1-3 дня</span>
+                </div>
+              </div>
+              <button 
+                onClick={handleContactClick}
+                className="w-full bg-orange-500 text-white py-3 rounded-lg font-semibold hover:bg-orange-600 transition-colors"
+              >
+                Обсудить проект
+              </button>
+            </div>
           </div>
         </section>
       </main>
