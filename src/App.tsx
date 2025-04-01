@@ -199,7 +199,7 @@ function App() {
       <footer className="bg-white mt-16">
         <div className="max-w-5xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
           <p className="text-center text-gray-500">
-            © 2024 Чудаков Данила Евгеньевич. Все права защищены.
+            © 2024 Чудаков Данила Евгеньевич.  Все права защищены.
           </p>
         </div>
       </footer>
